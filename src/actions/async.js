@@ -1,4 +1,3 @@
-import * as ActionTypes from '../constants/ActionTypes';
 
 export const receiveData = (json) =>{
   return {
@@ -8,5 +7,6 @@ export const receiveData = (json) =>{
 }
 
 export const async_fetch_data = (title)=>(dispatch, getState) =>{
+    dispatch({type:"START_REQUEST"});
     return fetch(`http://www.subreddit.com/r/${title}.json`).then(response=>response.json()).then(json=>dispatch(receiveData(json)))
 }

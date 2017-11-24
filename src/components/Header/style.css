@@ -1,0 +1,6 @@
+.ant-row,.ant-row form {
+    background-color: #e63434;
+}
+.ant-row form  div:nth-child(2) {
+    color:#fff;
+}

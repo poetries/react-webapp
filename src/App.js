@@ -17,8 +17,7 @@ class App extends React.Component {
     initDone:false
   }
   render() {
-    console.log("===========")
-    console.log(this.props.asyncData)
+   
     return (
       <div>
           {
@@ -34,7 +33,6 @@ class App extends React.Component {
     if (cityName == null) {// == 包含了undefined 、null情况
       cityName = '北京';
     }
-    this.props.async_fetch_data('reactjs');
     this.props.userInfo_update({
       cityName
     })
@@ -49,9 +47,7 @@ class App extends React.Component {
 }
 
 const mapStateToProps = (state, ownProps) => {
-
   return {
-    asyncData:state.asyncData
   }
 }
 
@@ -76,7 +72,6 @@ export default connect(
   // mapDispatchToProps
   {
     // 写法二 导入actions中需要的action即可
-    userInfo_update,
-    async_fetch_data
+    userInfo_update
   }
 )(App);

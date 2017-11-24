@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import PureRenderMixin from 'react-addons-pure-render-mixin';
+import Header from '../../components/Header';
 
 class IndexPage extends Component {
     constructor(props) {
@@ -10,7 +11,7 @@ class IndexPage extends Component {
     render() {
         return (
             <div>
-                Indexpage页面
+                <Header />
             </div>
         );
     }
