@@ -1,6 +1,6 @@
 import React from 'react';
 import {Route,BrowserRouter as Router, Switch} from 'react-router-dom'; //v4
-import IndexPage from '../containers/indexPage';
+import IndexPage from '../containers/Home/index';
 import App from '../App';
 import NotFindPage from '../containers/404';
 

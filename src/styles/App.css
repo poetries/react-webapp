@@ -1,4 +1,13 @@
 /* Base Application Styles */
 body {
-  color: #fff;
+  color: #000;
+  font-family: '微软雅黑';
+  font-size: 12px;
+}
+
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }

@@ -10,7 +10,7 @@ class IndexPage extends Component {
     render() {
         return (
             <div>
-                main-body部分
+                Indexpage页面
             </div>
         );
     }

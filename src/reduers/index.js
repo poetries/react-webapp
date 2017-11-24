@@ -1,10 +1,12 @@
 import {combineReducers} from 'redux';
-import Example from './example';
+import userInfo from './userInfo';
+import async_data from './async';
 
-const reducers = {
-  Example
+const rootReducers = {
+  userInfo,
+  async_data
 }
 
 export default combineReducers({
-    ...reducers
+    ...rootReducers
 })

@@ -3,12 +3,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {Provider} from 'react-redux';
 import App from './App';
-import routes from './routers';
+import RouteMap from './routers';
 import configureStore from './store/configureStore';
+
+import 'antd/dist/antd.css';
+import 'antd-mobile/dist/antd-mobile.css';
+import './styles/App.css';
 
 const store = configureStore();
 
-// Render the main component into the dom
 ReactDOM.render(<Provider store={store}>
-  {routes}
+  {RouteMap}
 </Provider>, document.getElementById('app'));

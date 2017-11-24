@@ -1,8 +1,8 @@
 import * as ActionTypes from '../constants/ActionTypes';
 
-export const example = (data)=>{
+export const userInfo_update = (data)=>{
     return {
-        type:'EXAMPLE',
+        type:ActionTypes.USERINFO_UPDATE,
         data
     }
 }

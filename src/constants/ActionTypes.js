@@ -1,1 +1,3 @@
-export  const EXAMPLE = 'EXAMPLE';
+export  const USERINFO_UPDATE = 'USERINFO_UPDATE';
+
+export const FETCHDATA = 'FETCHDATA';
