@@ -6,6 +6,8 @@ import Ad from './subpage/Ad';
 import List from './subpage/List';
 import { connect } from 'react-redux';
 
+import './subpage/style.css';
+
 class IndexPage extends Component {
     constructor(props) {
       super(props);

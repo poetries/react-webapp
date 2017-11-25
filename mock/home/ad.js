@@ -21,7 +21,7 @@ module.exports = [
     },
     {
         title: '电影',
-        img: 'http://images2015.cnblogs.com/blog/138012/201610/138012-20161016191706733-367929553.png',
+        img: 'http://upload-images.jianshu.io/upload_images/1480597-e3381657bc276477.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240',
         link: 'https://github.com/poetries'
     },
     {
