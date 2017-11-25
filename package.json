@@ -16,7 +16,8 @@
     "serve:dist": "node server.js --env=dist",
     "start": "node server.js --env=dev",
     "test": "karma start",
-    "test:watch": "karma start --autoWatch=true --singleRun=false"
+    "test:watch": "karma start --autoWatch=true --singleRun=false",
+    "mock": "node --harmony ./mock/server.js"
   },
   "repository": "",
   "keywords": [],
@@ -47,6 +48,9 @@
     "karma-phantomjs-launcher": "^1.0.0",
     "karma-sourcemap-loader": "^0.3.5",
     "karma-webpack": "^1.7.0",
+    "koa": "^1.2.2",
+    "koa-router": "^5.4.0",
+    "less-loader": "^4.0.5",
     "minimist": "^1.2.0",
     "mocha": "^3.0.0",
     "null-loader": "^0.1.1",
@@ -65,6 +69,8 @@
     "antd": "^2.13.10",
     "antd-mobile": "^2.0.3",
     "core-js": "^2.0.0",
+    "es6-promise": "^4.1.1",
+    "less": "^2.7.3",
     "normalize.css": "^4.0.0",
     "react": "^15.0.0",
     "react-addons-pure-render-mixin": "^15.6.2",
@@ -74,7 +80,10 @@
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
     "react-router-redux": "^4.0.8",
+    "react-swipe": "^5.1.0",
     "redux": "^3.7.2",
-    "redux-thunk": "^2.2.0"
+    "redux-thunk": "^2.2.0",
+    "swipe-js-iso": "^2.0.4",
+    "whatwg-fetch": "^2.0.3"
   }
 }

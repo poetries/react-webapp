@@ -3,9 +3,9 @@ import PureRenderMixin from 'react-addons-pure-render-mixin';
 import LocalStore from './utils/localStore';
 import {CITYNAMEC, CITYNAME} from './config/localStoreKey';
 import { Spin } from 'antd';
-import { bindActionCreators } from 'redux';
+import { bindActionCreators } from 'redux'; // bindActionCreators 这个现在已经不用了
 import { connect } from 'react-redux';
-import {userInfo_update,async_fetch_data} from './actions';
+import {userInfo_update} from './actions';
 
 
 class App extends React.Component {
@@ -23,7 +23,6 @@ class App extends React.Component {
           {
             this.state.initDone ? this.props.children:<div className="loading"><Spin tip="Loading..."/> </div>
           }
-          <div>{this.props.asyncData}</div>
       </div>
     );
   }
@@ -33,6 +32,8 @@ class App extends React.Component {
     if (cityName == null) {// == 包含了undefined 、null情况
       cityName = '北京';
     }
+
+    // 调用action creator
     this.props.userInfo_update({
       cityName
     })
@@ -41,8 +42,8 @@ class App extends React.Component {
     this.setState({
       initDone:true
     })
-    // 调用action creator
-    // console.log(this.props.userInfo_update('哈哈哈'))
+    
+  
   }
 }
 

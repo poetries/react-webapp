@@ -1,1 +1,1 @@
-# this is api about interface
+# 如果使用异步action获取数据，这个文件夹用不到了

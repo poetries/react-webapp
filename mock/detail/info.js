@@ -1,5 +1,5 @@
 module.exports = {
-    img: 'http://images2015.cnblogs.com/blog/138012/201610/138012-20161016201645858-1342445625.png',
+    img: 'http://upload-images.jianshu.io/upload_images/1480597-897ffe473160b7f1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240',
     title: '天下第一锅',
     star: 4,
     price: '88',
