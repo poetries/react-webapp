@@ -24,7 +24,9 @@ export default class Header extends Component {
                         </Col>
                     </a>
                     <SearchInput />
-                    <Col span={2} style={{textAlign:'center'}}><User style={{fontSize:'20px',margin:'10px 0',color:'#fff'}} /></Col>
+                    <a href='/user'>
+                        <Col span={2} style={{textAlign:'center'}}><User style={{fontSize:'20px',margin:'10px 0',color:'#fff'}} /></Col>
+                    </a>
                 </Row>
             </div>
         )

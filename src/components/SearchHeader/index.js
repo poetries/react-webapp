@@ -1,7 +1,8 @@
 import React from 'react'
 import PureRenderMixin from 'react-addons-pure-render-mixin'
 import { hashHistory } from 'react-router'
-
+import {Icon } from 'antd-mobile';
+import {Row,Col} from 'antd';
 import SearchInput from '../SearchInput'
 
 import './style.less'
@@ -14,14 +15,14 @@ class SearchHeader extends React.Component {
     render() {
         return (
             <div id="search-header" className="clear-fix">
-                <span className="back-icon float-left" onClick={this.clickHandle.bind(this)}>
-                    <i className="icon-chevron-left"></i>
-                </span>
-                <div className="input-container">
-                    <i className="icon-search"></i>
-                    &nbsp;
+                <Col span={2}>
+                    <span className="back-icon float-left" onClick={this.clickHandle.bind(this)}>
+                        <Icon size='lg' type='left' />
+                    </span>
+                </Col>
+                <Col span={22} style={{position:'relative',left:'20px'}}>
                     <SearchInput value={this.props.keyword || ''} enterHandle={this.enterHandle.bind(this)}/>
-                </div>
+                </Col>
             </div>
         )
     }

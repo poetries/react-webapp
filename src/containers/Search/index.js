@@ -4,6 +4,7 @@ import PureRenderMixin from 'react-addons-pure-render-mixin'
 import SearchHeader from '../../components/SearchHeader'
 import SearchList from './subpage/List'
 
+
 class Search extends React.Component {
     constructor(props, context) {
         super(props, context);

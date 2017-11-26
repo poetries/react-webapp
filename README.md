@@ -53,3 +53,17 @@ npm run mock
 │   └── index.js       // Webpack 预编译入口
 |__
 </pre>
+
+Todo
+---
+
+- 收藏和购买功能
+- 评价功能
+- 用户中心模块
+
+snapShot
+---
+
+![](docs/snapshot/page1.png)
+![](docs/snapshot/page2.png)
+![](docs/snapshot/page3.png)
