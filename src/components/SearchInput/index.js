@@ -3,6 +3,7 @@ import PureRenderMixin from 'react-addons-pure-render-mixin'
 import { SearchBar,Icon } from 'antd-mobile';
 import {Col} from 'antd';
 import './style.less'
+import {withRouter,browserHistory} from 'react-router-dom';
 
 class SearchInput extends React.Component {
     constructor(props, context) {
@@ -23,10 +24,11 @@ class SearchInput extends React.Component {
         
     }
     _KeyUpHandle() {
-        const keyword = encodeURIComponent(this.state.kwd);
-        window.location.href = '/search/all/' + keyword;
+        window.location.href = ('/search/all/' + encodeURIComponent(this.state.kwd));
     }
     render() {
+        const {history,match,location} = this.props;
+        console.log(history,match,location)
         return (
             <Col span={19}>
                         <SearchBar
@@ -41,4 +43,4 @@ class SearchInput extends React.Component {
     
 }
 
-export default SearchInput
+export default withRouter(SearchInput)
